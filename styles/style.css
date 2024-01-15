@@ -1,0 +1,80 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish, Helvetica, sans-serif;
+}
+header {
+  margin-top: 3rem;
+  padding-inline: 8rem;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+}
+nav img {
+  display: block;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-title a {
+  color: #131318;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+.menu-items {
+  display: flex;
+  gap: 2.5rem;
+  list-style-type: none;
+}
+.menu-items li {
+  color: #424247;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.menu-items a.active-link {
+  color: #ff5400;
+  font-weight: 700;
+}
+#toggler,
+label {
+  display: none;
+}
+label i {
+  font-size: 1.5rem;
+}
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  header {
+    padding-inline: 1.5rem;
+  }
+  .menu-items {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+  }
+  label {
+    display: inline-flex;
+  }
+  #toggler:checked ~ .menu-items {
+    max-height: 100%;
+  }
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
