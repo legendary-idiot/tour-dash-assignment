@@ -139,7 +139,7 @@ img {
   display: flex;
   gap: 3rem;
   justify-content: space-around;
-  margin-top: 3rem;
+  margin: 3rem 0;
   overflow: auto;
 }
 .blog-content {
@@ -165,6 +165,79 @@ img {
 }
 .image-content {
   width: 35%;
+}
+/* Destination Section */
+.destination-container h2 {
+  color: #131318;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.destination-container p {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 640px;
+  margin: 1.5rem auto 3rem;
+}
+.destination-image-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 0.5fr);
+  gap: 1.5rem;
+  height: 1160px;
+}
+.destination-image-container h3 {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.image-item-1 {
+  grid-area: 1 / 1 / 2 / 6;
+  background-image: url("/images/Image6.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.image-item-2 {
+  grid-area: 1 / 6 / 2 / 11;
+  background-image: url("/images/Image10.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.image-item-3 {
+  grid-area: 2 / 1 / 3 / 4;
+  background-image: url("/images/Image7.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.image-item-4 {
+  grid-area: 2 / 4 / 3 / 8;
+  background-image: url("/images/Image8.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.image-item-5 {
+  grid-area: 2 / 8 / 3 / 11;
+  background-image: url("/images/Image11.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.image-item-6 {
+  grid-area: 3 / 1 / 4 / 5;
+  background-image: url("/images/Image13.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.image-item-7 {
+  grid-area: 3 / 5 / 4 / 11;
+  background-image: url("/images/Image12.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 /* Responsive Design */
 @media screen and (max-width: 600px) {
@@ -227,5 +300,25 @@ img {
   }
   .image-content {
     width: 100%;
+  }
+  /* Destination Section */
+  .destination-container h2 {
+    font-size: 1.5rem;
+  }
+  .destination-container p {
+    margin: 1rem 0;
+  }
+  .destination-image-container {
+    display: block;
+  }
+  .image-item-1,
+  .image-item-2,
+  .image-item-3,
+  .image-item-4,
+  .image-item-5,
+  .image-item-6,
+  .image-item-7 {
+    height: 350px;
+    margin-bottom: 1rem;
   }
 }
