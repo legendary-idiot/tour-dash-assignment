@@ -167,13 +167,14 @@ img {
   width: 35%;
 }
 /* Destination Section */
-.destination-container h2 {
+.section-title {
+  margin-top: 3rem;
   color: #131318;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
 }
-.destination-container p {
+.section-paragraph {
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
   font-size: 1rem;
@@ -239,6 +240,48 @@ img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+/* Choose Us Section */
+.box-card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box-card-1,
+.box-card-3 {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 2rem;
+  width: 573px;
+  height: 284px;
+}
+.box-card-2 {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+  padding: 2rem;
+  width: 573px;
+  height: 284px;
+}
+.box-card-title {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 2rem 0 1rem;
+}
+.box-card-description {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.box-card-container p i {
+  font-size: 4rem;
+  height: 100%;
+  margin-top: 2rem;
+  color: rgba(255, 85, 0, 0.76);
+}
 /* Responsive Design */
 @media screen and (max-width: 600px) {
   /* Header Section */
@@ -290,7 +333,7 @@ img {
   .input-banner button {
     width: 255px;
   }
-  /* Responsive tour blog section */
+  /* Tour blog section */
   .tour-blog-section {
     flex-direction: column;
     margin-top: 1.5rem;
@@ -302,14 +345,15 @@ img {
     width: 100%;
   }
   /* Destination Section */
-  .destination-container h2 {
+  .section-title {
     font-size: 1.5rem;
   }
-  .destination-container p {
+  .section-paragraph {
     margin: 1rem 0;
   }
   .destination-image-container {
     display: block;
+    height: auto;
   }
   .image-item-1,
   .image-item-2,
@@ -320,5 +364,15 @@ img {
   .image-item-7 {
     height: 350px;
     margin-bottom: 1rem;
+  }
+  /* Choose Us Section */
+  .box-card-title {
+    font-size: 1.25rem;
+  }
+  .box-card-description {
+    font-size: 14px;
+  }
+  .box-card-container p i {
+    font-size: 3rem;
   }
 }
